@@ -10,6 +10,8 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var bmiValue:String?
+    var advice:String?
+    var color:UIColor?
 
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var advinceLabel: UILabel!
@@ -17,6 +19,8 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         bmiLabel.text = bmiValue
+        advinceLabel.text = advice
+        view.backgroundColor = color
 
        
     }
